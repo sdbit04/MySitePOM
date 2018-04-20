@@ -1,7 +1,7 @@
 from Include.PytestFrameWorkApproch.BasePkg.DriverClassModule import DriverCreator
 from Include.PytestFrameWorkApproch.PagePkg.LoginPage import LoginPage
 import unittest
-Browser="Firefox"
+Browser="firefox"
 # Try to use fixture at here
 LoginPageOB=LoginPage(Browser)
 class LoginTestClass(unittest.TestCase):
