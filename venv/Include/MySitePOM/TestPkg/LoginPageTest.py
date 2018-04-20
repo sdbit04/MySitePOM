@@ -2,6 +2,7 @@ from Include.PytestFrameWorkApproch.BasePkg.DriverClassModule import DriverCreat
 from Include.PytestFrameWorkApproch.PagePkg.LoginPage import LoginPage
 import unittest
 Browser="Firefox"
+# Try to use fixture at here
 LoginPageOB=LoginPage(Browser)
 class LoginTestClass(unittest.TestCase):
     #We have inheritade the unittest.TestCase class to allow all the methodes into class prefix test_ will get executed by py.test
