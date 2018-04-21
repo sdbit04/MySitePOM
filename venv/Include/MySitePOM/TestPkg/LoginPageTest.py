@@ -18,14 +18,3 @@ class LoginTestClass(unittest.TestCase):
         # Element, TorF=LoginPageOB.getElementWithResult('xpath', "//div[contains(text(), 'Invalid email or password')]")
         Element, TorF=LoginPageOB.getElementWithResult("xpath", "//div[contains(text(), 'Invalid email or password')]")
         assert TorF == True
-
-"""
-LoginPageOB=LoginPage("FireFox")
-LoginPageOB.Driver.get(LoginPageOB._baseUrl)
-LoginPageOB.clickLogin()
-LoginPageOB.sendUserId('sdbit04@gmail.com')
-LoginPageOB.sendPassword('avdcd')
-LoginPageOB.clickSubmit()
-time.sleep(10)
-LoginPageOB.Driver.close()
-"""
