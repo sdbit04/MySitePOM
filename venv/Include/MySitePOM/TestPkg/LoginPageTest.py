@@ -2,7 +2,7 @@ from Include.MySitePOM.BasePkg.DriverClassModule import DriverCreator
 from Include.MySitePOM.PagePkg.LoginPage import LoginPage
 import unittest
 import pytest
-Browser="Firefox"
+Browser="FirefoX"
 # Try to use fixture at here
 LoginPageOB=LoginPage(Browser)
 class LoginTestClass(unittest.TestCase):
