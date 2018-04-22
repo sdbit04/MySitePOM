@@ -1,4 +1,3 @@
 {
-  "LoginPageTest.py::LoginTestClass": true,
   "LoginPageTest.py::Test_loginClass::test_invalidLogin": true
 }
