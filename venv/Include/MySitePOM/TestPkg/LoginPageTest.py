@@ -1,7 +1,8 @@
-from Include.PytestFrameWorkApproch.BasePkg.DriverClassModule import DriverCreator
-from Include.PytestFrameWorkApproch.PagePkg.LoginPage import LoginPage
+from Include.MySitePOM.BasePkg.DriverClassModule import DriverCreator
+from Include.MySitePOM.PagePkg.LoginPage import LoginPage
 import unittest
-Browser="Firefox"
+import pytest
+Browser="FirefoX"
 # Try to use fixture at here
 LoginPageOB=LoginPage(Browser)
 class LoginTestClass(unittest.TestCase):
@@ -17,5 +18,3 @@ class LoginTestClass(unittest.TestCase):
         # Element, TorF=LoginPageOB.getElementWithResult('xpath', "//div[contains(text(), 'Invalid email or password')]")
         Element, TorF=LoginPageOB.getElementWithResult("xpath", "//div[contains(text(), 'Invalid email or password')]")
         assert TorF == True
-
-
