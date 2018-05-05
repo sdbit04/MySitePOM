@@ -1,0 +1,34 @@
+from selenium import webdriver
+import os
+class ElementFinder(object):
+    def __init__(self,BrowserName):
+        self.BrowserNameOb=BrowserName #self is used to mark the variable as object level variable
+        if self.BrowserNameOb == "Chrome":
+            self.DriverLocation="E:\\Python\\Developement\\BrowserDriver\\chromedriver.exe"
+            self.Driver=webdriver.Chrome(self.DriverLocation)
+            os.environ["webdriver.chrome.driver"]=self.DriverLocation
+
+        elif self.BrowserNameOb == "Firefox":
+            self.DriverLocation="E:\\Python\\Developement\\BrowserDriver"
+            self.Driver=webdriver.Firefox(self.DriverLocation)
+            os.environ["webdriver.firefox.driver"]=self.DriverLocation
+
+    def findElement(self,URL):
+        """
+        This is an object specific methode of ElementFider Class
+        We need to call the methode after creating an object of ElementFider.
+        and the method will behave based on the object
+        :return:
+        """
+        self.Driver.get(URL)
+        ElementByLinkText=self.Driver.find_element_by_link_text("Login")
+        if ElementByLinkText is not None:
+            print("Element was found by link text")
+
+# type ctrl+P to see the parameter of any method
+ElementFinderOB=ElementFinder("Chrome")
+ElementFinderOB.findElement("https://letskodeit.teachable.com/p/practice")
+
+
+
+#create an ElementFinder object for Chrome

@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=E:\Python\Developement\Selenium\MySitePOM\venv"
+set "VIRTUAL_ENV=E:\Python\Developement\Selenium\Test1\venv"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"
