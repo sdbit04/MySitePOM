@@ -1,5 +1,6 @@
 .idea/MySitePOM.iml
 .idea/workspace.xml
+.idea/misc.xml
 BasePkg/__pycache__/
 PagePkg/__pycache__/
 testPkg/__pycache__/
